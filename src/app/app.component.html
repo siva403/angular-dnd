@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Angular Drag and Drop Functionality</h2>
+
+  <div #autoscroll1 class="scrollable-wrapper float-left">
+  <div class="dragula_container" 
+  dragula="DRAGULA_CONTAINER" 
+  [(dragulaModel)]="sectionA"
+  id="source">
+    <div *ngFor="let section of sectionA">
+      <div class="section-style">{{section.name}}</div>
+    </div>
+  </div>
+</div>
+<div #autoscroll2 class="scrollable-wrapper">
+  <div class="dragula_container"
+       dragula="DRAGULA_CONTAINER"
+       [(dragulaModel)]="sectionB">
+    <div *ngFor="let section of sectionB">
+      <div class="section-style">{{section.name}}
+      </div>
+    </div>
+  </div>
+</div>
+</div>
